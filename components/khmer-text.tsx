@@ -3,7 +3,7 @@
 import type React from "react"
 import { useLanguage } from "@/hooks/use-language"
 import { cn } from "@/lib/utils"
-
+import { JSX } from "react"
 interface KhmerTextProps {
   children: React.ReactNode
   className?: string
