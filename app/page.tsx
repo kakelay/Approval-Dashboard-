@@ -25,6 +25,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 
+
 function AdminDashboardContent() {
   const { t } = useLanguage()
   const [activeSection, setActiveSection] = useState("pending")
@@ -59,7 +60,7 @@ function AdminDashboardContent() {
       default:
         return (
           <div className="space-y-6">
-            <div>
+            <div suppressHydrationWarning={true}>
               <h1 className="text-3xl font-bold tracking-tight">{t("adminPortal")}</h1>
               <p className="text-muted-foreground">{t("manageReview")}</p>
             </div>

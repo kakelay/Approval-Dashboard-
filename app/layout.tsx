@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
         <style>{`
 html {
@@ -36,7 +36,7 @@ html {
 }
 `}</style>
       </head>
-      <body className={`${notoSansKhmer.variable} font-sans antialiased`}>
+      <body  className="__variable_dd4c15 font-sans antialiased"suppressHydrationWarning={true}>
         <p></p>
         <ThemeProvider
           attribute="class"
